@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Página Inicial</title>
+  <link rel="stylesheet" href="/css/style.css">
+  <script src="/js/script.js" defer></script>
+</head>
+<body>
+  <h1>Bem-vindo!</h1>
+  <nav>
+    <a href="/">Home</a>
+    <a href="/servicos">Serviços</a>
+    <a href="/sobre">Sobre</a>
+  </nav>
+
+  <h2>Contato</h2>
+  <form action="/contato" method="POST">
+    <label for="nome">Nome:</label>
+    <input type="text" id="nome" name="nome" required>
+    
+    <label for="email">Email:</label>
+    <input type="email" id="email" name="email" required>
+    
+    <label for="mensagem">Mensagem:</label>
+    <textarea id="mensagem" name="mensagem" required></textarea>
+    
+    <button type="submit">Enviar</button>
+  </form>
+</body>
+</html>
